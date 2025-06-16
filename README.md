@@ -23,6 +23,10 @@ A mobile app for managing notes with date filtering capabilities, built with Rea
 - React Native CLI
 - Xcode/Android Studio
 
+### ScreenShots
+
+![alt text](image-1.png)  ![alt text](image-2.png)  ![alt text](image-3.png)
+
 ### 1. Frontend Setup
 ```bash
 git clone https://github.com/Muhammad-Ammad/CalendarApp.git
@@ -37,13 +41,9 @@ npx start
 npm run-android
 # or
 npx react-native run-ios
-
-####################  ScreenShots  ##########
-
-![alt text](image-1.png)  ![alt text](image-2.png)  ![alt text](image-3.png)
-
-##################### 2. Backend Setup ####################
-
+```
+### 2. Backend Setup
+```bash
 cd backend
 
 # Create virtual env
@@ -55,3 +55,4 @@ pip install -r requirements.txt
 
 # Run server (Flask example)
 python app.py
+```
