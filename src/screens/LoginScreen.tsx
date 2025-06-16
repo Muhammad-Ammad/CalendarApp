@@ -7,7 +7,8 @@ import {
   StyleSheet, 
   KeyboardAvoidingView, 
   Platform,
-  ScrollView
+  ScrollView,
+  Alert
 } from 'react-native';
 import { LoginScreenNavigationProp } from '../types';
 
@@ -20,7 +21,12 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    navigation.replace('Home');
+    if (!email || !password) {
+      Alert.alert('Email or Password cannot be empty.')
+    }
+    else {
+      navigation.replace('Home');
+    }
   };
 
   return (
